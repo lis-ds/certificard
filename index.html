@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio - Certificard - ID3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <!--   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> -->
+
+  <div class="popup-fundo" id="popup-fundo"></div>
+
+  <div class="col-left">
+    <div class="container">
+      <div class="barra-superior">
+
+        <!-- cria uma barra no topo da 'caixa' (estético) -->
+      </div> <!-- fecha <div class="barra-superior"> -->
+
+      <div class="container-int">
+        <div class="tema">
+          <button onclick="mudaTema()">Alterar tema</button>
+        </div> <!-- fecha <div class="tema"> -->
+
+        <header class="cabecalho">
+          <div class="perfil">
+            <img class="perfil-img" src="https://i.ibb.co/wKMpTKk/gir.png">
+
+            <div class="titulo">
+              <h1>Lis 🔰</h1>
+              <h3>Robô alienígena e faz-tudo quebra-galho<br>
+                #imersaodev
+              </h3>
+
+              <div class="icones" id="icones">
+                <!-- usando biblioteca -->
+                <!--<a title="GitHub" href="https://github.com/lis-ds" target="_blank" class="icones-perfil"><i class="devicon-github-original"></i></a>
+                <i class="devicon-codepen-original"></i> -->
+
+                <!-- usando imagens próprias (inverte cores usando filtro no modo dark -->
+                <a title="Codepen" href="https://codepen.io/lis_" target="_blank"><img src="https://i.ibb.co/Q6yqrHy/codepen.png"></a>
+                <a title="GitHub" href="https://github.com/lis-ds" target="_blank"><img src="https://i.ibb.co/mzMmRJK/github.png"></a>
+                <a title="Twitter" href="https://twitter.com/TheFlingy_" target="_blank"><img src="https://i.ibb.co/vznmZn3/twitter.png"></a>
+                <a title="E-mail" href="mailto:lis_ds@outlook.com"><img src="https://i.ibb.co/h9fTjsh/email.png"></a>
+
+              </div> <!-- fecha <div class="icones"> -->
+            </div> <!-- fecha <div class="titulo"> -->
+
+          </div> <!-- fecha <div class="perfil"> -->
+
+        </header> <!-- fecha <header class="cabecalho"> -->
+
+        <div class="projetos">
+          <h1 class="projetos-titulo">Projetos (#imersaodev)</h1>
+          <li><a href="#pj6">Super Trunfo - Turma da Mônica</a></li>
+          <li><a href="#pj4">AluraFlix - Ghibli edition</a></li>
+          <li><a href="#pj5">Tabela de Classificação de Campeonato</a></li>
+          <li><a href="#pj2">Conversor de Moedas</a></li>
+          <li><a href="#pj3">Mentalista - adivinhe o número secreto</li>
+          <li><a href="#pj1">Calculadora de média escolar</a></li>
+          <li><span class="li_port"><a href="#pj7">Certificard - Portfólio de Projetos<span id="li_port_aqui"> &lt;&ndash; <i>Você está aqui</i></span></a></span></li>
+
+        </div> <!-- fecha <div class="projetos"> -->
+      </div> <!-- fecha <div class="container-int"> -->
+    </div> <!-- fecha <div class="container"> -->
+  </div>
+
+  <div class="col-right">
+
+    <div class="container-projetos">
+      <div class="barra-superior">
+        <!-- cria uma barra no topo da 'caixa' (estético) -->
+      </div> <!-- fecha <div class="barra-superior"> -->
+
+      <div class="quadro-projetos">
+        <h2>PROJETOS</h2>
+        <p style="text-align:center">Clique em <button style="float: none;">&#10530;</button> para ver uma prévia</p>
+        <!-- Super Trunfo - INICIO -->
+        <div class="popup" id="pj6-popup">
+          <p style="text-align:center"><a onclick="hidePopup('pj6-popup')">FECHAR (X)</a></p>
+
+          <!-- Embed Codepen - INICIO -->
+          <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="result" data-slug-hash="RwgYaNb" data-user="lis_" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/lis_/pen/RwgYaNb">
+                Super Trunfo - Turma da Mônica - ID3</a> by Lis (<a href="https://codepen.io/lis_">@lis_</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          <!-- Embed Codepen - FIM -->
+
+        </div> <!--  <div class="popup" id="pj6-popup"> - FIM -->
+
+        <div class="proj" id="pj6">
+          <div class="proj-img">
+            <img src="https://i.ibb.co/6XjN2tS/pj6-super-trunfo-tdm-red.png" onclick="showPopup('pj6-popup')">
+          </div>
+          <div class="proj-desc">
+            <button onclick="showPopup('pj6-popup')">&#10530;</button>
+            <h4>Super Trunfo - Turma da Mônica</h4>
+            <p>Jogo de Super Trunfo com os personagens da Turma da Mônica! Sorteie cartas aleatórias e escolha uma característica para tentar ganhar da carta do adversário. Ganha a carta com maior valor da característica escolhida.</p>
+            <p>Funcionalidades:</p>
+            <li>Sorteio de cartas aleatórias;</li>
+            <li>Marcação de placar;</li>
+            <li>Opção de reiniciar o jogo e zerar o placar.</li>
+            <p><a href="https://github.com/lis-ds/proj6-id3-supertrunfo-tdm" target="_blank">GitHub</a> / <a href="https://codepen.io/lis_/full/RwgYaNb" target="_blank"><u>CodePen</u></a></p>
+          </div>
+        </div>
+        <!-- Super Trunfo - FIM -->
+
+        <!-- AluraFlix - INICIO -->
+        <div class="popup" id="pj4-popup">
+          <p style="text-align:center"><a onclick="hidePopup('pj4-popup')">FECHAR (X)</a></p>
+
+          <!-- Embed Codepen - INICIO -->
+          <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="result" data-slug-hash="wvepXRB" data-user="lis_" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/lis_/pen/wvepXRB">
+                Lista de Filmes 2.0 - ID3</a> by Lis (<a href="https://codepen.io/lis_">@lis_</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+          <!-- Embed Codepen - FIM -->
+
+        </div> <!--  <div class="popup" id="pj4-popup"> - FIM -->
+
+        <div class="proj" id="pj4">
+          <div class="proj-img">
+            <img src="https://i.ibb.co/x5d5QRC/pj4-ghibliflix-red.png" onclick="showPopup('pj4-popup')">
+          </div>
+          <div class="proj-desc">
+            <button onclick="showPopup('pj4-popup')">&#10530;</button>
+            <h4>AluraFlix - Catálogo de filmes</h4>
+            <p>Catálogo de filmes, com uma seleção inicial de filmes já apresentada. O usuário é convidado a montar seu próprio catálogo, podendo adicionar e deletar filmes, e ordená-los por ordem crescente ou decrescente do ano de lançamento.</p>
+            <p>Funcionalidades:</p>
+            <li>Apresentação de uma galeria com os pôsteres e títulos dos filmes inclusos;</li>
+            <li>Campos para adição de novos filmes a partir da inserção do título, url da imagem do pôster e ano de lançamento;</li>
+            <li>Lista para seleção de filmes a serem deletados do catálogo;</li>
+            <li>Botões para indicar o ordenamento desejado.</li>
+            <p><a href="https://github.com/lis-ds/proj4-id3-aluraflix" target="_blank">GitHub</a> / <a href="https://codepen.io/lis_/full/wvepXRB" target="_blank"><u>CodePen</u></a></p>
+          </div>
+        </div>
+        <!-- AluraFlix - FIM -->
+
+        <!-- Tabela classificação - INICIO -->
+        <div class="popup" id="pj5-popup">
+          <p style="text-align:center"><a onclick="hidePopup('pj5-popup')">FECHAR (X)</a></p>
+
+          <!-- Embed Codepen - INICIO -->
+          <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="result" data-slug-hash="XWgqaxo" data-user="lis_" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/lis_/pen/XWgqaxo">
+                Tabela de classificação de campeonato - ID3</a> by Lis (<a href="https://codepen.io/lis_">@lis_</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+          <!-- Embed Codepen - FIM -->
+
+        </div> <!--  <div class="popup" id="pj5-popup"> - FIM -->
+        <div class="proj" id="pj5">
+          <div class="proj-img">
+            <img src="https://i.ibb.co/4dgJhyz/pj5-tabelaclassificacao-v2-red.png" onclick="showPopup('pj5-popup')">
+          </div>
+          <div class="proj-desc">
+            <button onclick="showPopup('pj5-popup')">&#10530;</button>
+            <h4>Tabela de classificação</h4>
+            <p>Tabela de classificação de campeonato. Use para acompanhar seu time favorito ou para jogar com os amigos.<br>
+              Para cada vitória são marcados 3 pontos, e para cada empate, 1 ponto.</p>
+            <p>Funcionalidades:</p>
+            <li>Botões para adição e subtração de vitórias, derrotas e empates;</li>
+            <li>Calcula o total de pontos de cada participante;</li>
+            <li>Destaque para o participante com mais pontos (com critério de desempate);</li>
+            <li>Ordenação por classificação ou ordem alfabética;</li>
+            <li>Opção para adicionar e deletar participantes da lista;</li>
+            <li>Opção para zerar todas as pontuações ou limpar a tabela por completo.</li>
+            <p><a href="https://github.com/lis-ds/id3-proj5-tabelaclassificacao" target="_blank">GitHub</a> / <a href="https://codepen.io/lis_/full/XWgqaxo" target="_blank"><u>CodePen</u></a></p>
+          </div>
+        </div>
+        <!-- Tabela classificação - FIM -->
+
+        <!-- Conversor de moedas - INICIO -->
+        <div class="popup" id="pj2-popup">
+          <p style="text-align:center"><a onclick="hidePopup('pj2-popup')">FECHAR (X)</a></p>
+
+          <!-- Embed Codepen - INICIO -->
+          <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="result" data-slug-hash="vYZWgZL" data-user="lis_" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/lis_/pen/vYZWgZL">
+                Conversor de moedas - ID3</a> by Lis (<a href="https://codepen.io/lis_">@lis_</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+          <!-- Embed Codepen - FIM -->
+
+        </div> <!--  <div class="popup" id="pj2-popup"> - FIM -->
+        <div class="proj" id="pj2">
+          <div class="proj-img">
+            <img src="https://i.ibb.co/r7mh40j/pj2-conversormoedas-red.png" onclick="showPopup('pj2-popup')">
+          </div>
+          <div class="proj-desc">
+            <button onclick="showPopup('pj2-popup')">&#10530;</button>
+            <h4>Conversor de moedas</h4>
+            <p>Converte valores entre diferentes moedas (moedas disponíveis: real, dólar, euro, libra e bitcoin)</p>
+            <li>Seleção das moedas de origem e para a qual se deseja converter;</li>
+            <li>Apresentação do resultado da conversão na tela.</li>
+            <p><small>(cotações do dia 19/09/21)</small></p>
+            <p><a href="https://github.com/lis-ds/proj2-id3-conversor-moedas" target="_blank">GitHub</a> / <a href="https://codepen.io/lis_/full/vYZWgZL" target="_blank"><u>CodePen</u></a></p>
+          </div>
+        </div>
+        <!-- Conversor de moedas - FIM -->
+
+        <!-- Mentalista - INICIO -->
+        <div class="popup" id="pj3-popup">
+          <p style="text-align:center"><a onclick="hidePopup('pj3-popup')">FECHAR (X)</a></p>
+
+          <!-- Embed Codepen - INICIO -->
+          <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="result" data-slug-hash="gORXyMX" data-user="lis_" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/lis_/pen/gORXyMX">
+                Mentalista - ID3 [versão com dicas]</a> by Lis (<a href="https://codepen.io/lis_">@lis_</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+          <!-- Embed Codepen - FIM -->
+
+        </div> <!--  <div class="popup" id="pj3-popup"> - FIM -->
+        <div class="proj" id="pj3">
+          <div class="proj-img">
+            <img src="https://i.ibb.co/JFLChCw/pj3-mentalista-v2-red.png" onclick="showPopup('pj3-popup')">
+          </div>
+          <div class="proj-desc">
+            <button onclick="showPopup('pj3-popup')">&#10530;</button>
+            <h4>Mentalista - adivinhe o número secreto</h4>
+            <p>Jogo em que o usuário tem que chutar um número de 0 a 10 e tentar acertar de acordo com as dicas dadas.</p>
+            <li>Apresentação das dicas conforme os chutes dados;</li>
+            <li>Contador de tentativas e lista dos números chutados na tela.</li>
+            <p><a href="https://github.com/lis-ds/proj3-id3-mentalista" target="_blank">GitHub</a> / <a href="https://codepen.io/lis_/full/gORXyMX" target="_blank"><u>CodePen</u></a></p>
+          </div>
+        </div> <!-- Mentalista - FIM -->
+
+        <!-- Calculadora de média - INICIO -->
+        <div class="popup" id="pj1-popup">
+          <p style="text-align:center"><a onclick="hidePopup('pj1-popup')">FECHAR (X)</a></p>
+
+          <!-- Embed Codepen - INICIO -->
+          <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="result" data-slug-hash="MWooGRE" data-user="lis_" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/lis_/pen/MWooGRE">
+                Calculadora de média - ID3</a> by Lis (<a href="https://codepen.io/lis_">@lis_</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+          <!-- Embed Codepen - FIM -->
+
+        </div> <!--  <div class="popup" id="pj1-popup"> - FIM -->
+        <div class="proj" id="pj1">
+          <div class="proj-img">
+            <img src="https://i.ibb.co/WnK4STJ/pj1-calcmedia-red.png" onclick="showPopup('pj6-popup')"></a>
+          </div>
+          <div class="proj-desc">
+            <button onclick="showPopup('pj1-popup')">&#10530;</button>
+            <h4>Calculadora de média escolar</h4>
+            <p>Calcula a nota média do ano escolar de um aluno a partir das notas dos bimestres e retorna o resultado da aprovação ou não do aluno.</p>
+            <li>Campos para inserção das notas;</li>
+            <li>Campo para alteração da média mínima para aprovação;</li>
+            <li>Apresentação da média final do aluno e indicação do status de aprovação.</li>
+            <p><s>GitHub</s> / <a href="https://codepen.io/lis_/full/MWooGRE" target="_blank"><u>CodePen</u></a></p>
+          </div>
+        </div><!-- Calculadora de média - FIM -->
+
+        <!-- Portfólio - INICIO -->
+        <div class="proj" id="pj7">
+          <div class="proj-img">
+            <!-- sem imagem -->
+          </div>
+          <div class="proj-desc">
+            <h4>Certificard - Portfólio de Projetos</h4>
+            <p>Página que agrega todos os projetos feitos durante a <a href="https://imersao.dev/" target="_blank">#imersaodev</a> (20/09 a 03/10/21) realizada pela <a href="https://www.alura.com.br/" target="_blank">Alura</a>, servindo, tanto os projetos como a página em si, como um portfólio do aprendizado e desenvolvimento obtido durante esse período.</p>
+            <li>Lista dos projetos realizados;</li>
+            <li>Quadro com descrição, funcionalidades e links dos projetos;</li>
+            <li>Popup com prévia de cada projeto utilizando o <i>embed</i> do CodePen.</li>
+            <p><a href="https://github.com/lis-ds/id3-certificard" target="_blank">GitHub</a> / <a href="https://codepen.io/lis_/full/dyRgzRJ" target="_blank"><u>CodePen</u></a></p>
+          </div>
+        </div>
+        <!-- Portfólio - FIM -->
+
+      </div> <!-- fecha <div class="quadro-projetos"> -->
+    </div> <!-- fecha <div class="container-projetos"> -->
+  </div>
+
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>

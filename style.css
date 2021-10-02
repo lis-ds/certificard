@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  background: rgb(218, 218, 218);
+  color: rgb(68, 68, 68);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background: rgb(242, 242, 242);
+  border-radius: 10px;
+  border: 2px solid rgb(194, 194, 194);
+  margin: 30px 0 10px 30px;
+}
+
+.barra-superior {
+  background-color: rgb(242, 242, 242);
+  /* mesma cor do fundo de .projetos */
+  border-radius: 10px 10px 0 0;
+  border-bottom: 2px dashed rgb(194, 194, 194);
+  /* mesma cor do border do container */
+  width: 100%;
+  height: 15px;
+}
+
+.container-int {
+  /*   height: 540px; */
+  height: calc(100vh - 75px);
+  /* altura responsiva de acordo com o tamanho da tela */
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfil-img {
+  max-height: 80px;
+  border-radius: 400px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 5px;
+  padding-bottom: 0px;
+}
+
+.titulo {
+  /*   margin-left: 16px; */
+  text-align: center;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.tema button {
+  background: rgb(238, 238, 238);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: none;
+}
+
+.tema button:hover {
+  background: rgb(68, 68, 68);
+  color: #ffffff;
+}
+
+.tema {
+  background-color: rgb(255, 255, 255);
+  padding: 5px 5px 0 5px;
+}
+
+.icones {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 5px;
+  font-size: 25px;
+}
+
+.icones img {
+  max-width: 20px;
+  transition: 0.2s;
+}
+
+.icones img:hover {
+  /*   max-width: 25px; */
+  transform: scale(1.25);
+}
+
+.projetos {
+  background-color: rgb(242, 242, 242);
+  border-top: 2px dashed rgb(194, 194, 194);
+  /* mesma cor do border do container */
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.projetos li {
+  /*   list-style-type: circle; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.projetos ul {
+  list-style-position: outside;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+}
+
+.projetos a:hover {
+  /*   font-weight: bold; */
+  text-shadow: 1px 0 0 rgb(10, 10, 10);
+}
+
+#li_port_aqui {
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.li_port a:hover > #li_port_aqui {
+  visibility: visible;
+}
+
+.container-projetos {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 2px solid rgb(194, 194, 194);
+  margin: 30px 30px 10px;
+}
+
+.quadro-projetos {
+  /*   height: 540px; */
+  height: calc(100vh - 75px);
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.quadro-projetos h2 {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+
+.quadro-projetos h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.quadro-projetos p,
+li {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.quadro-projetos img {
+  max-width: 160px;
+  transition: 0.2s;
+}
+
+.quadro-projetos a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.quadro-projetos a:hover {
+  font-weight: bold;
+}
+
+.proj {
+  display: flex;
+  align-items: center;
+  border-top: 2px dashed rgb(194, 194, 194);
+  /* mesma cor do border .container */
+}
+
+.proj-img {
+  padding: 20px 15px 20px;
+}
+
+.proj-desc {
+  padding: 20px 15px 20px;
+}
+
+.proj:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.proj:hover h4 {
+  text-shadow: 2px 2px 5px #999999;
+}
+
+.quadro-projetos button {
+  float: right;
+  background: rgb(238, 238, 238);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  margin: 4px;
+  transition: 0.2s;
+}
+
+.proj:hover button {
+  transform: scale(1.1);
+  background: rgb(68, 68, 68);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* colunas de separação do layout */
+.col-left {
+  float: left;
+  width: 30%;
+  padding: 0;
+}
+
+.col-right {
+  float: left;
+  width: 70%;
+  padding: 0;
+}
+
+/* Responsividade p/ telas menores */
+@media screen and (max-width: 830px) {
+  .col-left {
+    width: 100%;
+  }
+
+  .col-right {
+    width: 100%;
+  }
+
+  .container {
+    margin-right: 30px;
+  }
+
+  .container-int {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .quadro-projetos {
+    height: auto;
+    overflow-y: visible;
+  }
+}
+
+/* Rearranja os itens do quadro de projetos: imagem em cima da descrição */
+@media screen and (max-width: 560px) {
+  .proj {
+    flex-wrap: wrap;
+  }
+
+  .proj-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .proj-desc {
+    width: 100%;
+    padding: 0px 20px 20px;
+  }
+}
+
+/* Configurando os popups */
+.popup-fundo {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  position: fixed;
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  bottom: 5%;
+  /*   width: 80%;
+  height: 80%; */
+  /* width e height automaticas com as definições de left, right, top e bottom */
+  overflow-y: scroll;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+#pj1-popup,
+#pj2-popup,
+#pj3-popup,
+#pj4-popup,
+#pj5-popup,
+#pj6-popup {
+  visibility: hidden;
+}
+
+/* estilo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(194, 194, 194);
+  border: 1.8px solid rgb(194, 194, 194);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(154, 154, 154);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(242, 242, 242);
+  border-radius: 100px;
+  margin: 0px 0px 10px;
+}
+
+/* criação do modo escuro */
+.dark {
+  background: rgb(45, 45, 45);
+  color: rgb(221, 221, 221);
+}
+
+.dark a {
+  color: rgb(221, 221, 221);
+}
+
+.dark .tema button {
+  background: rgb(85, 85, 85);
+  color: rgb(221, 221, 221);
+}
+
+.dark .tema button:hover {
+  /* usar cores do botão no modo claro */
+  background: rgb(238, 238, 238);
+  color: rgb(68, 68, 68);
+}
+
+.dark .container {
+  background: rgb(39, 39, 39);
+  border: 2px solid rgb(85, 85, 85);
+}
+
+.dark .barra-superior {
+  background-color: rgb(39, 39, 39);
+  /* mesma cor do fundo de .projetos */
+  border-bottom: 2px dashed rgb(85, 85, 85);
+  /* mesma cor do border do container */
+}
+
+.dark .cabecalho {
+  background-color: rgb(25, 25, 25);
+}
+
+.dark .tema {
+  background-color: rgb(25, 25, 25);
+}
+
+.dark .icones {
+  filter: invert(100%);
+}
+
+.dark .projetos {
+  background-color: rgb(39, 39, 39);
+  border-top: 2px dashed rgb(85, 85, 85);
+  /* mesma cor do border do container */
+}
+
+.dark .projetos a:hover {
+  text-shadow: 1px 0 0 rgb(150, 150, 150);
+}
+
+.dark .container-projetos {
+  background: rgb(25, 25, 25);
+  border: 2px solid rgb(85, 85, 85);
+}
+
+.dark .popup {
+  background-color: rgb(10, 10, 10);
+}
+
+.dark .proj {
+  border-top: 2px dashed rgb(85, 85, 85);
+  /* mesma cor do border .container */
+}
+
+.dark .proj:hover {
+  background-color: rgb(39, 39, 39);
+}
+
+.dark .quadro-projetos button {
+  background: rgb(85, 85, 85);
+  color: rgb(221, 221, 221);
+  /* igual ao botão 'tema' */
+}
+
+.dark .proj button:hover {
+  /* usar cores do botão no modo claro */
+  background: rgb(238, 238, 238);
+  color: rgb(68, 68, 68);
+}
+
+/* barras de rolagem no tema escuro */
+.dark ::-webkit-scrollbar-thumb {
+  background: rgb(85, 85, 85);
+  border: 1.8px solid rgb(85, 85, 85);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgb(115, 115, 115);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgb(39, 39, 39);
+}
